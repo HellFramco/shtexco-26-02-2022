@@ -1,0 +1,17 @@
+{
+    "name": "hellframco/p14",
+    "autoload": {
+        "psr-4": {
+            "Hellframco\\P14\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Manuel",
+            "email": "manuelbarrios7891238520@gmail.com"
+        }
+    ],
+    "require": {
+        "automattic/woocommerce": "^3.0"
+    }
+}

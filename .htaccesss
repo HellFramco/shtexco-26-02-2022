@@ -1,0 +1,18 @@
+Order deny, allow
+Deny from All
+
+Allow from 186.99.42.100
+Allow from 181.58.255.205
+Allow from 191.156.62.39
+
+
+
+
+Options All -Indexes
+
+# php -- BEGIN cPanel-generated handler, do not edit
+# Set the “ea-php74” package as the default “PHP” programming language.
+<IfModule mime_module>
+  AddHandler application/x-httpd-ea-php74___lsphp .php .php7 .phtml
+</IfModule>
+# php -- END cPanel-generated handler, do not edit
