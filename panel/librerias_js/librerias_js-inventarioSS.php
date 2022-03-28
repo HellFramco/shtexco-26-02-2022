@@ -5,7 +5,6 @@
     $(document).ready(function() {
     
 
-
         $('#example thead tr')
             .clone(true)
             .addClass('filters')
@@ -72,7 +71,7 @@
 
             if(row[1] == 1){
 
-              return '<a class="thumbnail" href="modal/imagenesReferencias/' + row[0] +'.jpg" target="_blank"><img src="../imagenes/iconos/imagen.png" border="0" /></a>';
+              return '<a data-toggle="modal" data-id="'+row[0]+'" href="#myModal"><img src="../imagenes/iconos/imagen.png" border="0" /></a>';
 
             }else{
 
@@ -84,6 +83,15 @@
 
          }] 
       });
+
+      
+      $('#myModal').on('show.bs.modal', function(e) { 
+
+        var Id = $(e.relatedTarget).data('id');
+        var img = $(e.currentTarget).find('img[name="img"]').attr("src","modal/imagenesReferencias/"+Id+".jpg");
+        console.log(Id);
+      });
+
     });
 
 </script>

@@ -42,43 +42,6 @@ $cant = 0;
       margin-bottom: 20px;
     }
 
-.thumbnail{
-position: static;
-transition: .2s;
-}
-
-.thumbnail:hover{
-background-color: transparent;
-transition: .2s;
-}
-
-.thumbnail span{ /*CSS for enlarged image*/
-position: static;
-top: -1000px;
-visibility: hidden;
-color: black;
-text-decoration: none;
-transition: .2s;
-}
-
-.thumbnail span img{ /*CSS for enlarged image*/
-border-width: 0;
-transition: .2s;
-}
-
-.thumbnail:hover span{ /*CSS for enlarged image on hover*/
-visibility: visible;
-top: 0;
-left: 60px; /*position where enlarged image should offset horizontally */
-transition: .2s;
-}
-
-.thumbnail:hover span img{
-transition: .2s;
-width: 450px;
-height: 600px;
-}
-
   </style>
 
 
@@ -124,6 +87,23 @@ height: 600px;
             </ul>
 
           </div>
+
+          <!-- Modal IMAGEN -->
+          <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body" style="text-align: center;">
+                  <img name="img" src="" width="450pxpx" height="600px" style="text-align: center;"> 
+                </div>
+              </div>
+            </div>
+          </div>
+
           <!-- Modal -->
           <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
@@ -160,14 +140,6 @@ height: 600px;
               </div>
             </div>
           </div>
-
-
-
-
-
-
-
-
 
           <!-- Modal -->
           <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -1129,20 +1101,11 @@ height: 600px;
   <!-- libreria necesaria para el funcionamiento de data table -->
   <?php include './librerias_js/librerias_js-inventarioSS.php' ?>
 
-
-
-
-
-
   <script>
     function option(op) {
       document.getElementById("op").value = op;
 
     }
-
-
-
-
 
     $.fn.dataTable.ext.search.push(
       function(settings, data, dataIndex) {
