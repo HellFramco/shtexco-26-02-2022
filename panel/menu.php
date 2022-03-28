@@ -158,8 +158,7 @@ else if ($_SESSION['typeUser'] == 2) {
             <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
                 <div class="bg-white py-2 collapse-inner rounded">
                     <h6 class="collapse-header">Inventario</h6>
-                    <a class="collapse-item" href="visualizar-inventario-vendedor.php">inventario existente en <br>bodega</a>
-                    <a class="collapse-item" href="visualizar-inventario-vendedor - copia.php">inventario existente en <br>bodega R</a>
+                    <a class="collapse-item" href="visualizar-inventario-vendedorSS.php">inventario existente en <br>bodega</a>
                 </div>
             </div>
         </li>

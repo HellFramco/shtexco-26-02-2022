@@ -29,10 +29,25 @@
           } );
         } ); 
 
-        
+
       $("#example").append(
         $('<tfoot/>').append( $("#example thead tr.filters").clone() )
       );
+
+      
+      $('#example tfoot tr:eq(0) th').each( function (i) {
+        var title = $(this).text(); //es el nombre de la columna
+        $(this).html( '<input type="text" placeholder="'+title+'" />' );
+
+          $( 'input', this ).on( 'keyup change', function () {
+              if ( table.column(i).search() !== this.value ) {
+                  table
+                    .column(i)
+                    .search( this.value )
+                    .draw();
+              }
+          } );
+        } );
     
         var table = $('#example').DataTable({
         
@@ -47,11 +62,28 @@
         fixedHeader: {
           header: true,
           footer: true
-        }
+        },
+        columnDefs: [ {
+          targets: 0,
+          visible: false
+          },{
+          targets: 1,
+          render: function (data, type, row) {
+
+            if(row[1] == 1){
+
+              return '<a class="thumbnail" href="modal/imagenesReferencias/' + row[0] +'.jpg" target="_blank"><img src="../imagenes/iconos/imagen.png" border="0" /></a>';
+
+            }else{
+
+              return '<p>No tiene imagen</p>'
+
+            }
+              //cosole.log(row);
+          }
+
+         }] 
       });
-
-
-
     });
 
 </script>

@@ -1060,35 +1060,25 @@ height: 600px;
                   <table class="table table-bordered" id="example" width="100%" cellspacing="0">
                     <thead>
                       <tr>
-                        <th></th>
-                        <th>silueta</th>
-                        <th>referencia</th>
-                        <th>descripcion</th>
-                        <th>marca</th>
-                        <th>color</th>
-                        <th>talla 6 <img src="../imagenes/iconos/rank.jpeg" data-toggle="modal" data-target="#exampleModal1" onclick="option('1')" alt=""></th>
-                        <th>talla 8 <img src="../imagenes/iconos/rank.jpeg" data-toggle="modal" data-target="#exampleModal2" onclick="option('2')" alt=""></th>
-                        <th>talla 10 <img src="../imagenes/iconos/rank.jpeg" data-toggle="modal" data-target="#exampleModal3" onclick="option('3')" alt=""></th>
-                        <th>talla 12 <img src="../imagenes/iconos/rank.jpeg" data-toggle="modal" data-target="#exampleModal4" onclick="option('4')" alt=""></th>
-                        <th>talla 14 <img src="../imagenes/iconos/rank.jpeg" data-toggle="modal" data-target="#exampleModal5" onclick="option('5')" alt=""></th>
-                        <th>talla 16 <img src="../imagenes/iconos/rank.jpeg" data-toggle="modal" data-target="#exampleModal6" onclick="option('6')" alt=""></th>
-                        <th>talla 18 <img src="../imagenes/iconos/rank.jpeg" data-toggle="modal" data-target="#exampleModal7" onclick="option('7')" alt=""></th>
-                        <th>talla 20 <img src="../imagenes/iconos/rank.jpeg" data-toggle="modal" data-target="#exampleModal8" onclick="option('8')" alt=""></th>
-                        <th>talla 26 <img src="../imagenes/iconos/rank.jpeg" data-toggle="modal" data-target="#exampleModal9" onclick="option('9')" alt=""></th>
-                        <th>talla 28 <img src="../imagenes/iconos/rank.jpeg" data-toggle="modal" data-target="#exampleModal10" onclick="option('10')" alt=""></th>
-                        <th>talla 30 <img src="../imagenes/iconos/rank.jpeg" data-toggle="modal" data-target="#exampleModal11" onclick="option('11')" alt=""></th>
-                        <th>talla 32 <img src="../imagenes/iconos/rank.jpeg" data-toggle="modal" data-target="#exampleModal12" onclick="option('12')" alt=""></th>
-                        <th>talla 34 <img src="../imagenes/iconos/rank.jpeg" data-toggle="modal" data-target="#exampleModal13" onclick="option('13')" alt=""></th>
-                        <th>talla 36 <img src="../imagenes/iconos/rank.jpeg" data-toggle="modal" data-target="#exampleModal14" onclick="option('14')" alt=""></th>
-                        <th>talla 38 <img src="../imagenes/iconos/rank.jpeg" data-toggle="modal" data-target="#exampleModal15" onclick="option('15')" alt=""></th>
-                        <th>talla S <img src="../imagenes/iconos/rank.jpeg" data-toggle="modal" data-target="#exampleModal16" onclick="option('16')" alt=""></th>
-                        <th>talla m <img src="../imagenes/iconos/rank.jpeg" data-toggle="modal" data-target="#exampleModal17" onclick="option('17')" alt=""></th>
-                        <th>talla l <img src="../imagenes/iconos/rank.jpeg" data-toggle="modal" data-target="#exampleModal18" onclick="option('18')" alt=""></th>
-                        <th>talla xl <img src="../imagenes/iconos/rank.jpeg" data-toggle="modal" data-target="#exampleModal19" onclick="option('19')" alt=""></th>
-                        <th>talla u <img src="../imagenes/iconos/rank.jpeg" data-toggle="modal" data-target="#exampleModal20" onclick="option('20')" alt=""></th>
-                        <th>talla est <img src="../imagenes/iconos/rank.jpeg" data-toggle="modal" data-target="#exampleModal21" onclick="option('21')" alt=""></th>
+                        <th>ID</th>
+                        <th>Imagen</th>
+                        <th>Silueta</th>
+                        <th>Referencia</th>
+                        <th>Descripcion</th>
+                        <th>Marca</th>
+                        <th>Color</th>
+                        <th>Talla U/6/26 <img src="../imagenes/iconos/rank.jpeg" data-toggle="modal" data-target="#exampleModal1" onclick="option('1')" alt=""></th>
+                        <th>Talla S/8/28 <img src="../imagenes/iconos/rank.jpeg" data-toggle="modal" data-target="#exampleModal2" onclick="option('2')" alt=""></th>
+                        <th>Talla M/10/30 <img src="../imagenes/iconos/rank.jpeg" data-toggle="modal" data-target="#exampleModal3" onclick="option('3')" alt=""></th>
+                        <th>Talla L/12/32 <img src="../imagenes/iconos/rank.jpeg" data-toggle="modal" data-target="#exampleModal4" onclick="option('4')" alt=""></th>
+                        <th>Talla XL/14/34 <img src="../imagenes/iconos/rank.jpeg" data-toggle="modal" data-target="#exampleModal5" onclick="option('5')" alt=""></th>
+                        <th>Talla 16/26 <img src="../imagenes/iconos/rank.jpeg" data-toggle="modal" data-target="#exampleModal6" onclick="option('6')" alt=""></th>
+                        <th>Talla 18/38 <img src="../imagenes/iconos/rank.jpeg" data-toggle="modal" data-target="#exampleModal7" onclick="option('7')" alt=""></th>
+                        <th>Talla 20 <img src="../imagenes/iconos/rank.jpeg" data-toggle="modal" data-target="#exampleModal8" onclick="option('8')" alt=""></th>
+                        <th>Talla EST <img src="../imagenes/iconos/rank.jpeg" data-toggle="modal" data-target="#exampleModal9" onclick="option('9')" alt=""></th>
                         <th>Total</th>
-                        <th>precio</th>
+                        <th>Precio</th>
+                        <th>Precio Mayor</th>
                       </tr>
                     </thead>
                   </table>
@@ -1137,7 +1127,7 @@ height: 600px;
   <!-- modal necesario para el funcionamiento del logout -->
 
   <!-- libreria necesaria para el funcionamiento de data table -->
-  <?php include './librerias_js/librerias_js-inventariocopy.php' ?>
+  <?php include './librerias_js/librerias_js-inventarioSS.php' ?>
 
 
 
