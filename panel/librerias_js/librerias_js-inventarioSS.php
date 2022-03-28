@@ -48,40 +48,45 @@
           } );
         } );
     
-        var table = $('#example').DataTable({
-        
+
+
+
+      var table = $('#example').DataTable({
         serverSide: true,
         processing: true,
         sAjaxSource: "ServerSide/serversideVendedor.php",
-        scrollY: "400px",
+        scrollY: "500px",
         scrollX: true,
         scrollCollapse: true,
         fixedColumns: true,
         orderCellsTop: true,
         fixedHeader: {
-          header: true,
-          footer: true
+            header: true,
+            footer: true
         },
         columnDefs: [ {
-          targets: 0,
-          visible: false
-          },{
-          targets: 1,
-          render: function (data, type, row) {
+            targets: 0,
+            visible: false
+            },{
+            targets: 1,
+            render: function (data, type, row) {
 
-            if(row[1] == 1){
+              if(row[1] == 1){
 
-              return '<a data-toggle="modal" data-id="'+row[0]+'" href="#myModal"><img src="../imagenes/iconos/imagen.png" border="0" /></a>';
+                return '<a data-toggle="modal" data-id="'+row[0]+'" href="#myModal"><img src="../imagenes/iconos/imagen.png" border="0" /></a>';
 
-            }else{
+              }else{
 
-              return '<p>No tiene imagen</p>'
+                return '<p>No tiene imagen</p>'
 
+              }
+                //cosole.log(row);
             }
-              //cosole.log(row);
-          }
 
-         }] 
+        }],
+          language: {
+            url: "//cdn.datatables.net/plug-ins/1.10.16/i18n/Spanish.json"
+          }
       });
 
       
