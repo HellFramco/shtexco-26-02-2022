@@ -609,7 +609,7 @@ if ($_SESSION['typeUser'] == 8) {
             </a>
             <div id="colapseVentas" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
                 <div class="bg-white py-2 collapse-inner rounded">
-                    <a class="collapse-item" href="ventas.php">Todas las ventas</a>
+                    <a class="collapse-item" href="ventasSS.php">Todas las ventas</a>
                     <a class="collapse-item" href="ventas-vendedor.php">Mis ventas</a>
                     <a class="collapse-item" href="ventas-por-aprobar.php">Ventas por Aprobar <br>Cartera</a>
                     <a class="collapse-item" href="venta-por-linea.php">Cantidad de Ventas por <br> linea</a>
