@@ -1044,7 +1044,7 @@ $cant = 0;
                         <th>Talla M/10/30 <img src="../imagenes/iconos/rank.jpeg" data-toggle="modal" data-target="#exampleModal3" onclick="option('3')" alt=""></th>
                         <th>Talla L/12/32 <img src="../imagenes/iconos/rank.jpeg" data-toggle="modal" data-target="#exampleModal4" onclick="option('4')" alt=""></th>
                         <th>Talla XL/14/34 <img src="../imagenes/iconos/rank.jpeg" data-toggle="modal" data-target="#exampleModal5" onclick="option('5')" alt=""></th>
-                        <th>Talla 16/26 <img src="../imagenes/iconos/rank.jpeg" data-toggle="modal" data-target="#exampleModal6" onclick="option('6')" alt=""></th>
+                        <th>Talla 16/36 <img src="../imagenes/iconos/rank.jpeg" data-toggle="modal" data-target="#exampleModal6" onclick="option('6')" alt=""></th>
                         <th>Talla 18/38 <img src="../imagenes/iconos/rank.jpeg" data-toggle="modal" data-target="#exampleModal7" onclick="option('7')" alt=""></th>
                         <th>Talla 20 <img src="../imagenes/iconos/rank.jpeg" data-toggle="modal" data-target="#exampleModal8" onclick="option('8')" alt=""></th>
                         <th>Talla EST <img src="../imagenes/iconos/rank.jpeg" data-toggle="modal" data-target="#exampleModal9" onclick="option('9')" alt=""></th>
