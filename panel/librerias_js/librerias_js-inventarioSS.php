@@ -52,7 +52,7 @@
         
         serverSide: true,
         processing: true,
-        sAjaxSource: "ServerSide/serversideUsuarios.php",
+        sAjaxSource: "ServerSide/serversideVendedor.php",
         scrollY: "400px",
         scrollX: true,
         scrollCollapse: true,
